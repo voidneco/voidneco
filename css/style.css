@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #161616;
+    color: #FFFFFF;
+    font-family: 'Source Code Pro', Arial;
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    height: 100%;
+
+    background-image: radial-gradient(rgba(92, 14, 73, 0.99), rgba(19, 3, 17, 0.99)), url("assets/static.gif");
+
+    background-size: cover, cover;
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: scroll;
+
+
+    font-size: 1.425rem;
+    text-shadow: 0 0 1ex rgba(255, 51, 255, 0.7), 0 0 2px rgba(255, 255, 255, 0.8)
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+a:hover {
+        &::before {
+            content: "[ ";
+            color: white;
+        }
+        &::after {
+            content: " ]";
+            color: white;
+        }
+}
+
+body, a {
+    color: rgba(255, 128, 234, 0.8);
+}
+
+.name_color {
+    color: rgba(255, 128, 255, 0.8);
+    text-shadow: 0 0 1px rgba(255, 51, 238, 0.4), 0 0 2px rgba(255, 255, 255, 0.8);
+}
+
+::selection {
+    background: #0080FF;
+    text-shadow: none
+}
+
+::-moz-selection {
+    background: #0080FF;
+    text-shadow: none
+}
+
+
+.term {
+    box-sizing: inherit;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    padding: 4rem;
+    text-transform: lowercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.text {
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 1px rgb(255, 51, 245), 0 0 2px rgba(255, 255, 255, 0.8);
+}
+
+h1 {
+    font-size: 3.9rem
+}
+
+h1, h2 {
+    margin: 0.5rem
+}
+
+p {
+    font-size: 2rem;
+}
+
+h6 {
+    font-size: 0.7rem;
+}
+
+.socials.pick {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    height: 100%;
+    text-align: center;
+    color: rgba(255, 128, 213, 0.8);
+    text-shadow: 0 0 1px rgba(255, 51, 211, 0.4), 0 0 2px rgba(255, 255, 255, 0.8);
+}

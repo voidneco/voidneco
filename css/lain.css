@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+    background-image: url("assets/static.gif");
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-family: 'Source Code Pro', Arial;
+    font-size: 5rem;
+    text-shadow: 0 0 1ex rgba(51, 255, 51, 0.7), 0 0 2px rgba(255, 255, 255, 0.8)
+}
+
+img {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+h2 {
+    font-size: 1rem;
+}
